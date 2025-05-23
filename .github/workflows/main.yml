@@ -14,4 +14,4 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Affichage de la version et de l'OS
-        run: echo "Version : ${{ matrix.version }} sur ${{ matrix.os }}"
+        run: echo "Version ${{ matrix.version }} sur ${{ matrix.os }}"
