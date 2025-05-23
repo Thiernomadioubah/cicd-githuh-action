@@ -38,7 +38,7 @@ jobs:
     - name: Commit et push
       working-directory: ./cicd-githuh-action
       run: |
-        git config --global user.name 'Thiernomadioubah'
+        git config --global user.name 'github-actions'
         git config --global user.email 'madiouda130@gmail.com'
         git add fichier.txt
         git commit -m "Ajouter des modifications via GitHub Actions"
