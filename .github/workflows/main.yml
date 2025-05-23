@@ -33,7 +33,7 @@ jobs:
       
     - name: Faire des modifications
       run: echo "modifications" >> fichier.txt
-      # working-directory: ./cicd-githuh-action
+      working-directory: ./cicd-githuh-action
       
     # - run: ls -a ./cicd-githuh-action
       # working-directory: ./cicd-githuh-action
