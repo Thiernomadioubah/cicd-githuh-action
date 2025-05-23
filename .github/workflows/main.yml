@@ -24,10 +24,16 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    defaults:
+      run: 
+        working-directory: ./cicd-githuh-action
     steps:
     - name: Cloner le dépôt
       run: git clone https://github.com/Thiernomadioubah/cicd-githuh-action.git
+      
+      working-directory: ./cicd-githuh-action
 
+      
     - name: Faire des modifications
       run: echo "modifications" >> fichier.txt
       
