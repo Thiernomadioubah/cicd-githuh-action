@@ -32,14 +32,14 @@ jobs:
       run: git clone https://github.com/Thiernomadioubah/cicd-githuh-action.git .
       
     - name: Faire des modifications
-      run: echo "modifications" >> ./cicd-githuh-action/fichier.txt
+      run: echo "modifications" >> fichier.txt
       # working-directory: ./cicd-githuh-action
       
-    - run: ls -a ./cicd-githuh-action
+    # - run: ls -a ./cicd-githuh-action
       # working-directory: ./cicd-githuh-action
 
     - name: Commit et push
-      # working-directory: ./cicd-githuh-action
+      working-directory: ./cicd-githuh-action
       # git config --global user.name 'github-actions'
         # git config --global user.email 'madiouda130@gmail.com'
       run: |
