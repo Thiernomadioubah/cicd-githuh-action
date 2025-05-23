@@ -1,12 +1,17 @@
-name: Mon premier workflow
-on: [push]
+name: Exemple de matrice multi-dimensionnelle
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  say-hello:
-    runs-on: ubuntu-latest
+  example_matrix:
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
-      - run: echo "Hello, World! hhh"
-  list_env_variables:
-    runs-on: ubuntu-latest
-    steps:
-      - name: List all environment variables
-        run: env
+      - name: Affichage de la version et de l'OS
+        run: echo "Version : ${{ matrix.version }} sur ${{ matrix.os }}"
