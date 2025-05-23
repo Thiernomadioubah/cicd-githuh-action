@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Production
-      url: https://github.com
+      url: http://toto.fr
 
     steps:
       - name: deploiement
