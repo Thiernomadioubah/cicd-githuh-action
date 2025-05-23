@@ -30,6 +30,8 @@ jobs:
 
     - name: Faire des modifications
       run: echo "modifications" >> fichier.txt
+      
+    - run: ls
 
     - name: Commit et push
       run: |
