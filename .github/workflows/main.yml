@@ -5,3 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, World!"
+  list_env_variables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List all environment variables
+        run: env
