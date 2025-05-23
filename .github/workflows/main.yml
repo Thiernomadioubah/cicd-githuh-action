@@ -14,4 +14,4 @@ jobs:
 
     steps:
       - name: deploiement
-        # ...
+        run: echo "production"
